@@ -1,6 +1,6 @@
 # CS5335HW04
 Matthew Pashkowsky
-Youtube Kerbin Video: 
+Youtube Kerbin Video: https://youtu.be/aGldW1am6qc
 My strategy is a greedy strategy. Overall, the ship does not plan a full trip at once, but picks an individual moon it is going to go to next. In order to conserve fuel and simplify the option space, the ship only analyzes Hohmann Transfers. The ship analyzes the inner three most moons it has not been to yet, and checks if it can do a Hohmann Transfer almost immediately on either the second or third moon. If one isn't avaiable, it will go to the innermost moon. Once it intercepts the target moon, it recircularizes its orbit around the central planet, and then looks again at where it is going to go next. The goal is to minimize time on the overall journey by minimizing every step's time.
 
 Code: 
